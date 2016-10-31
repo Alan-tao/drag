@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>拖拽</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    html,
+    body {
+        width: 100%;
+        background: #fff;
+        font-size: 12px;
+        font-family: "微软雅黑";
+    }
+    
+    #box {
+    	display: flex;
+    	display: -webkit-flex;
+        width: 200px;
+        height: 200px;
+        background: #f00;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        cursor: move;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="box">按住拖拽我</div>
+    <!-- js -->
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript">
+    drag('box')
+    </script>
+</body>
+
+</html>
