@@ -9,8 +9,15 @@
 			var disX = ev.pageX - obj.offsetLeft;
 			var disY = ev.pageY - obj.offsetTop;
 			// 鼠标移动
-			console.log(disX);
-			console.log(disY);
+			document.onmousemove = function (ev) {
+				obj.style.left = ev.pageX - disX +"px";
+				obj.style.top = ev.pageY - disY +"px";
+			}
+			document.onmouseup = function () {
+				/* body... */
+				document.onmousemove = null;
+				document.onmouseup = null;
+			}
 		}
-
+		return false;
 	}
