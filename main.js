@@ -1,7 +1,5 @@
 // 2016年10月31日15:31:07
-
-	function drag (id) {
-		
+	function drag (id) {	
 		var obj = document.getElementById(id);
 		// 鼠标按下
 		obj.onmousedown = function (ev) {
