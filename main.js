@@ -19,5 +19,5 @@
 				document.onmouseup = null;
 			}
 		}
-
+		return false;
 	}
